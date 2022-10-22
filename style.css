@@ -41,6 +41,10 @@ body {
     max-width: 50%;
 }
 
+.logo {
+    margin-top: 7px;
+}
+
 .menu {
     display: flex;
    
