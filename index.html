@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slick/">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+   <header class="header">
         <div class="container">
             <div class="row">
                 <div class="col-3">
@@ -23,22 +25,317 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <nav>
-                        <ul class="menu">
-                            <li><a href="">Home1</a></li>
-                            <li><a href="">Products 2</a></li>
-                            <li><a href="">Paymant</a></li>
-                            <li><a href="">Shipping</a></li>
-                        </ul>
+                    <nav class="menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Product <i class="down"></i></a>
+                            <ul>
+                                <li><a href="" class="downmenu">Phone</a>
+                                <li><a href="" class="downmenu">Laptops and tablet</a>
+                                <li><a href="" class="downmenu">Watch</a>
+                                <li><a href="" class="downmenu">Pods</a>
+                                <li><a href="" class="downmenu">Smart TV</a>
+                                <li><a href="" class="downmenu">Gadgets</a>
+                            </ul>
+                        
+                        </li>
+                        <li><a href="">Payment</a></li>
+                        <li><a href="">Shipping</a></li>
                     </nav>
                 </div>
-                <div class="col-3">Search</div>
+                <div class="col-3 d-flex ">
+                    <div class="form-search">
+                        <button class="but-search">Search</button>
+                        <div class="icon-serch">
+                        </div>  
+                    </div>
+                    
+                        <button class="but-bascet">
+                            <div class="products-count" id="produts-count">
+                              4
+                            </div>
+                        </button>        
+                    
+                </div>
+                
             </div>
         </div>
-    </header>
-    <main class="">Main</main>
-    <foter class="foter">Footer</foter>
+   </header>
+
+   <!-- <div class="slider-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="slider-block">
+                    <div>Slider 1</div>
+                    <div>Slider 2</div>
+                    <div>Slider 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div> -->
 
 
+
+   </div>
+   <div class="slider">
+    <h1 class="h-slider">Slide 3</h1>
+   </div>
+   <main class="main">
+        <div class="container">
+                <div class="row">
+                <div class="col-3">
+                        <div class="filter">
+                            <h1>DEVICE TYPE</h1>
+                            <ul>
+                                <li><input type="checkbox" name="Laptop"> Laptop</li>
+                                <li><input type="checkbox" name="Laptop"> Tablet</li>
+                            </ul>
+                            <h1 class="p-filter">COLOR</h1>
+                            <ul>
+                                <li><input type="checkbox" name="Black"> Black</li>
+                                <li><input type="checkbox" name="Red"> Red</li>
+                                <li><input type="checkbox" name="Green"> Green</li>
+                                <li><input type="checkbox" name="Blue"> Blue</li>
+                                <li><input type="checkbox" name="Orange"> Orange</li>
+                                
+                            </ul>
+                            <h1 class="p-filter">RAM</h1>
+                            <ul>
+                                <li><input type="checkbox" name="1GB"> 1 GB</li>
+                                <li><input type="checkbox" name="2GB"> 2 GB</li>
+                                <li><input type="checkbox" name="4GB"> 4 GB</li>
+                                <li><input type="checkbox" name="6GB"> 6 GB</li>
+                                <li><input type="checkbox" name="8GB"> 8 GB</li>   
+                            </ul>
+                            <button class="but-show">Show more options...</button>
+                            <button class="but-filter">SUBMIT</button>
+                        </div>
+                </div>
+                <div class="col-9">
+                    <p>Home page  >  Product  >  Laptops and tablet</p>
+                    <div class="producr-header">
+                        <h2>Laptops and Tablets</h2>
+                        <select name="sort" class="sortdrop" >
+                            <option value="">sort by name</option>
+                            <option value="">sort by data </option>
+                            <option value="">sort by popularity</option>
+                        </select>
+                    </div>
+                 
+                    
+                                
+                                
+                    <div class="product">
+                    <div class="card-product">
+                        <div class="photo-product product-1">
+                            <div class="photo-fix">
+
+                            </div>
+                            <div class="like">
+                                
+                            </div>   
+                        </div>
+                        <p><span class="text-bold top-size">#1 Device Name</span></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <p><span class="text-bold">TYPE:</span> Laptop</p>
+                        <p><span class="text-bold">SCREEN SIZE:</span> 7 inches</p>
+                        <p><span class="text-bold">RAM:</span> 1 GB</p>
+                        <p class="price"><span class="price-down">$599 </span><span class="price-top">25</span></p>
+                        <div class="product-quantity">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button></button>
+                        </div>
+
+
+
+                        <button class="but-details">MORE DETAILS</button>
+                        <button class="add-card">ADD TO CARD</button>
+                    </div>
+                    <div class="card-product">
+                        <div class="photo-product product-2">
+                            <div class="photo-fix">
+
+                            </div>
+                            <div class="like">
+                                
+                            </div>   
+                        </div>
+                        <p><span class="text-bold top-size">#2 Device Name</span></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <p><span class="text-bold">TYPE:</span> Laptop</p>
+                        <p><span class="text-bold">SCREEN SIZE:</span> 7 inches</p>
+                        <p><span class="text-bold">RAM:</span> 1 GB</p>
+                        <p class="price"><span class="price-down">$599 </span><span class="price-top">25</span></p>
+                        <button class="but-details">MORE DETAILS</button>
+                        <button class="add-card">ADD TO CARD</button>
+                    </div>
+                    <div class="card-product">
+                        <div class="photo-product product-3">
+                            <div class="photo-fix">
+
+                            </div>
+                            <div class="like">
+                                
+                            </div>   
+                        </div>
+                        <p><span class="text-bold top-size">#3 Device Name</span></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <p><span class="text-bold">TYPE:</span> Laptop</p>
+                        <p><span class="text-bold">SCREEN SIZE:</span> 7 inches</p>
+                        <p><span class="text-bold">RAM:</span> 1 GB</p>
+                        <p class="price"><span class="price-down">$599 </span><span class="price-top">25</span></p>
+                        <button class="but-details">MORE DETAILS</button>
+                        <button class="add-card">ADD TO CARD</button>
+                    </div>
+                    <div class="card-product data-aos="fade-up"">
+                        <div class="photo-product product-4">
+                            <div class="photo-fix">
+
+                            </div>
+                            <div class="like">
+                                
+                            </div>   
+                        </div>
+                        <p><span class="text-bold top-size">#4 Device Name</span></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <p><span class="text-bold">TYPE:</span> Laptop</p>
+                        <p><span class="text-bold">SCREEN SIZE:</span> 7 inches</p>
+                        <p><span class="text-bold">RAM:</span> 1 GB</p>
+                        <p class="price"><span class="price-down">$599 </span><span class="price-top">25</span></p>
+                        <button class="but-details">MORE DETAILS</button>
+                        <button class="add-card">ADD TO CARD</button>
+                    </div>
+                    <div class="card-product">
+                        <div class="photo-product product-5">
+                            <div class="photo-fix">
+
+                            </div>
+                            <div class="like">
+                                
+                            </div>   
+                        </div>
+                        <p><span class="text-bold top-size">#5 Device Name</span></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <p><span class="text-bold">TYPE:</span> Laptop</p>
+                        <p><span class="text-bold">SCREEN SIZE:</span> 7 inches</p>
+                        <p><span class="text-bold">RAM:</span> 1 GB</p>
+                        <p class="price"><span class="price-down">$599 </span><span class="price-top">25</span></p>
+                        <button class="but-details">MORE DETAILS</button>
+                        <button class="add-card">ADD TO CARD</button>
+                    </div>
+                    <div class="card-product">
+                        <div class="photo-product product-6">
+                            <div class="photo-fix">
+
+                            </div>
+                            <div class="like">
+                                
+                            </div>   
+                        </div>
+                        <p><span class="text-bold top-size">#6 Device Name</span></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <p><span class="text-bold">TYPE:</span> Laptop</p>
+                        <p><span class="text-bold">SCREEN SIZE:</span> 7 inches</p>
+                        <p><span class="text-bold">RAM:</span> 1 GB</p>
+                        <p class="price"><span class="price-down">$599 </span><span class="price-top">25</span></p>
+                        <button class="but-details">MORE DETAILS</button>
+                        <button class="add-card">ADD TO CARD</button>
+                    </div>
+                    <div class="card-product">
+                        <div class="photo-product product-7">
+                            <div class="photo-fix">
+
+                            </div>
+                            <div class="like">
+                                
+                            </div>   
+                        </div>
+                        <p><span class="text-bold top-size">#7 Device Name</span></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <p><span class="text-bold">TYPE:</span> Laptop</p>
+                        <p><span class="text-bold">SCREEN SIZE:</span> 7 inches</p>
+                        <p><span class="text-bold">RAM:</span> 1 GB</p>
+                        <p class="price"><span class="price-down">$599 </span><span class="price-top">25</span></p>
+                        <button class="but-details">MORE DETAILS</button>
+                        <button class="add-card">ADD TO CARD</button>
+                    </div>
+                    <div class="card-product">
+                        <div class="photo-product product-8">
+                            <div class="photo-fix">
+
+                            </div>
+                            <div class="like">
+                                
+                            </div>   
+                        </div>
+                        <p><span class="text-bold top-size">#8 Device Name</span></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <p><span class="text-bold">TYPE:</span> Laptop</p>
+                        <p><span class="text-bold">SCREEN SIZE:</span> 7 inches</p>
+                        <p><span class="text-bold">RAM:</span> 1 GB</p>
+                        <p class="price"><span class="price-down">$599 </span><span class="price-top">25</span></p>
+                        <button class="but-details">MORE DETAILS</button>
+                        <button class="add-card">ADD TO CARD</button>
+                    </div>
+                    <div class="card-product">
+                        <div class="photo-product product-9">
+                            <div class="photo-fix">
+
+                            </div>
+                            <div class="like">
+                                
+                            </div>   
+                        </div>
+                        <p><span class="text-bold top-size">#9 Device Name</span></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <p><span class="text-bold">TYPE:</span> Laptop</p>
+                        <p><span class="text-bold">SCREEN SIZE:</span> 7 inches</p>
+                        <p><span class="text-bold">RAM:</span> 1 GB</p>
+                        <p class="price"><span class="price-down">$599 </span><span class="price-top">25</span></p>
+                        <button class="but-details">MORE DETAILS</button>
+                        <button class="add-card">ADD TO CARD</button>
+                    </div>
+                </div>
+              <a href="" class="load-more">Load more ...</a>  
+            </div>
+    </div>
+    </div>
+   </main>
+       
+   <footer class="footer">
+   
+       <div class="fother-text">Copyright 2017</div> 
+    
+    
+   </footer>
+
+   <!-- <div class="modal">
+    <div class="modal-block">
+        <form action="" >
+            <div class="btn-close">X</div>
+            <h3>Please call for more details</h3>
+            <div class="form-field">
+                <input type="text" placeholder="Your name">
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Your phone">
+            </div>
+            <button>Please call</button>
+        </form> -->
+    </div>
+</div>
+
+
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+
+   <script src="ápp.js"></script>
 </body>
 </html>
+
+
